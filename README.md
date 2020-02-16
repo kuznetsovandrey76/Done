@@ -1,7 +1,6 @@
-Вход в личный кабинет BEGET
-`ssh -i id_rsa akuznetsov@akuznetsov.beget.tech`
-`cd andreykuznetsov.ru/`
-
+Вход в личный кабинет BEGET  
+`ssh -i id_rsa akuznetsov@akuznetsov.beget.tech`  
+`cd andreykuznetsov.ru/`  
 
 Структура andreykuznetsov.ru/
 ``` js
@@ -21,10 +20,9 @@ publiс/ (LINK на public_html)
 .htaccess
 ```
 
-
-`mkdir -p Done/tmp`
-`ln -s public_html public`
-
+`mkdir -p Done/tmp`  
+Для корректной отдачи статического контента средствами Nginx создается ссылка public, указывающая на public_html:  
+`ln -s public_html public`  
 
 .htaccess
 ``` js
@@ -34,7 +32,7 @@ PassengerAppType node
 PassengerStartupFile app.js
 ```
 
-`touch tmp/restart.txt`
+`touch tmp/restart.txt`  
 При изменении или добавлении кода также требуется выполнять данную команду, чтобы увидеть изменения на сайте.
 
 ``` sql
@@ -46,7 +44,7 @@ create table msgs(
 );
 ```
 
-HELP 
+HELP   
 `https://beget.com/ru/articles/webapp_nodejs`
 
 .env
