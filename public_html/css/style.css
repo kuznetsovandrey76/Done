@@ -10,7 +10,9 @@ body {
 
 .form {
     position: relative;
-    border: 1px solid #fc0; 
+    border: 2px solid #fc0; 
+    border-radius: 4px;
+    overflow: hidden;
 }
 .form-input {
     width: calc(100% - 30px);
@@ -32,7 +34,9 @@ body {
     right: 0;
     height: 30px;
     background: #fc0;
+    border-radius: 0;
     border: 0;
+    text-align: center;
 }
 
 

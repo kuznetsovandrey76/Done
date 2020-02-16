@@ -1,7 +1,3 @@
-Вход в личный кабинет BEGET  
-`ssh -i id_rsa akuznetsov@akuznetsov.beget.tech`  
-`cd andreykuznetsov.ru/`  
-
 Структура andreykuznetsov.ru/
 ``` js
 Done/
@@ -32,8 +28,11 @@ PassengerAppType node
 PassengerStartupFile app.js
 ```
 
-`touch tmp/restart.txt`  
+Вход в личный кабинет BEGET  
+`ssh -i id_rsa akuznetsov@akuznetsov.beget.tech`  
+`cd andreykuznetsov.ru/Done`  
 При изменении или добавлении кода также требуется выполнять данную команду, чтобы увидеть изменения на сайте.
+`touch tmp/restart.txt`  
 
 ``` sql
 create table msgs(
