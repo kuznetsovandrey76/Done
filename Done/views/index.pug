@@ -1,0 +1,16 @@
+extends ./layout/default
+
+block title 
+  | Index
+
+block main
+    .container
+        .row
+            .col-6
+                h3.mb-1 Done
+                form(id='add-msg' method='post' action='/add-msg')
+                    .d-flex.align-items-center
+                        input.mr-2(type="text" id='msg' name='msg')
+                    input.my-2(type="submit")
+
+    

@@ -1,0 +1,27 @@
+{
+  "name": "done",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuznetsovandrey76/done.git"
+  },
+  "keywords": [],
+  "author": "Andrey Kuznetsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuznetsovandrey76/done/issues"
+  },
+  "homepage": "https://github.com/kuznetsovandrey76/done#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.1",
+    "pug": "^2.0.4"
+  }
+}
