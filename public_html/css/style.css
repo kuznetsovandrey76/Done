@@ -1,0 +1,38 @@
+body {
+    font-family: 'Comfortaa';
+}
+.header {
+    text-align: center;
+}
+.capital-letter {
+    color: tomato;
+}
+
+.form {
+    position: relative;
+    border: 1px solid #fc0; 
+}
+.form-input {
+    width: calc(100% - 30px);
+    border: 0 solid transparent;
+    padding: 3px;
+}
+
+.form-input:active, 
+.form-input:focus {
+    outline: none;
+}
+.form-input::-moz-focus-inner {
+    border: 0;
+}
+
+.form-submit {
+    width: 30px;
+    position: absolute;
+    right: 0;
+    height: 30px;
+    background: #fc0;
+    border: 0;
+}
+
+

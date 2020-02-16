@@ -6,14 +6,20 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 // .env
-// require('dotenv').config(__dirname + '/.env');
+// for local version
 require('dotenv').config();
+
+// for hosting version
+// require('dotenv').config(__dirname + '/.env');
 
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
+// for local version
+app.use(express.static(__dirname + './../public_html'));
 
-app.use(express.static(__dirname + '/public'));
+// for hosting version
+// app.use(express.static(__dirname + 'public'));
 app.use(express.json({ limit: '1mb'}));
 app.set("view engine", "pug");
 
